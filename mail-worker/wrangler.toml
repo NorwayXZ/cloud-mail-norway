@@ -45,3 +45,13 @@ crons = [] # Account cron quota is full; scheduled cleanup is disabled.
 
 [build]
 command = "pnpm --prefix ../mail-vue install && pnpm --prefix ../mail-vue run build"
+
+# Independent receiving-mailbox storage
+[[d1_databases]]
+binding = "db"
+database_name = "cloud-mail-norway"
+database_id = "f5b5b497-dcfe-4692-8d89-ed88dcce9d57"
+
+[[kv_namespaces]]
+binding = "kv"
+id = "7aff10e57381405e98616ac7d5a951d1"
